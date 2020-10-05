@@ -327,5 +327,6 @@ input[type="password"]:focus,
 input[type="search"]:active {
   -webkit-appearance: none;
   outline: none !important;
-  box-shadow: 0 0 2px 1px $color__main;
+  border-color: #00a6d3;
+  box-shadow: 0 0 0;
 }

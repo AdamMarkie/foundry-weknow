@@ -44,7 +44,7 @@
       display: flex;
       align-items: center;
       margin-right: 10px;
-      border-right: 1px solid $color__grey;
+      border-right: 1px solid lightgray;
       @include respond-below(xs) {
         min-width: 80px;
         border-right: none;
@@ -102,6 +102,10 @@
       color: $color__grey;
       font-size: 14px;
       margin-left: 4px;
+    }
+    svg {
+      min-height: 40px;
+      min-width: 40px;
     }
   }
 }

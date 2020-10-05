@@ -75,6 +75,10 @@ header {
     border-top-left-radius: 5px;
     padding: 5px;
     font-size: 17px;
+    &:focus {
+      border-color: #00a6d3;
+      box-shadow: 0 0 0;
+    }
   }
   .search-group__btn {
     min-height: 50px;
@@ -368,6 +372,7 @@ header {
     }
   }
   .submenu-secondLevel {
+    display: none;
     position: absolute;
     z-index: 9;
     top: 0px;

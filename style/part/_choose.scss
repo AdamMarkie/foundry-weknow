@@ -95,6 +95,7 @@
       }
       > span {
         margin-right: 6px;
+        
         &:hover {
           cursor: pointer;
         }
@@ -225,6 +226,10 @@
       border-radius: 5px;
       padding: 13px;
       margin-bottom: 40px;
+      &:focus {
+        border-color: #00a6d3;
+        box-shadow: 0 0 0;
+      }
       &::placeholder {
         color: $color__grey;
       }
@@ -247,3 +252,4 @@
     }
   }
 }
+

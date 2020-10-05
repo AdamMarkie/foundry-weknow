@@ -38,18 +38,25 @@
       border-bottom: 1px solid $color__light-grey;
       margin-bottom: 10px;
       position: relative;
+      
+      @media (max-width: 675px) {
+        grid-template-columns: 1fr;
+      }
     }
     .bin-icon {
       position: absolute;
       top: 10px;
-      right: 20px;
+      right: 0;
+      margin: 0 1em;
       &:hover {
         cursor: pointer;
       }
     }
+
     &-info {
       > p {
         margin-bottom: 16px;
+
       }
     }
     .journey {
@@ -111,7 +118,7 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
     @include respond-below(sm) {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr 1fr;
     }
     .btn {
       background-color: $color__text;
@@ -190,3 +197,8 @@
     }
   }
 }
+
+.cart__order-info-title {
+  width:75%;
+}
+

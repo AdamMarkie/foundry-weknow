@@ -160,6 +160,9 @@
     > h3 {
       font-family: $text__fontname;
       margin-bottom: 10px;
+      @media (max-width: 675px) {
+        display: none;
+      }
     }
   }
   .highlights-container {
@@ -170,6 +173,7 @@
     column-gap: 20px;
     @include respond-below(xs) {
       grid-template-columns: repeat(2, 1fr);
+      display: none;
     }
   }
   .highlights-item {
@@ -299,5 +303,45 @@
         }
       }
     }
+  }
+}
+
+
+// Mobile Edits 5/10/20
+.top-product-image{
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.transfer-map__highlights_small {
+  margin-top: 30px;
+  > h3 {
+    font-family: $text__fontname;
+    margin-bottom: 10px;
+    margin-left: 6vw;
+  }
+  .highlights-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px 15px;
+    row-gap: 30px;
+    column-gap: 20px;
+  }
+  .highlights-item {
+    display: flex;
+    align-items: center;
+    svg {
+      min-width: 40px;
+      min-height: 40px;
+    }
+    > p {
+      color: $color__grey;
+      font-size: 14px;
+      margin-left: 4px;
+    }
+  }
+  @media (min-width: 576px) {
+    display: none;
   }
 }
