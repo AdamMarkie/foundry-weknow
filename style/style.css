@@ -6641,28 +6641,12 @@ ol.breadcrumb li a:hover {
 
 .partner-main__inner .partner-body {
   max-width: 820px;
+  background: #FBFBFB;
 }
 
-.partner-main__inner .partner-body h2 {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.partner-main__inner .partner-body p {
-  margin-bottom: 15px;
-  color: #778591;
-}
-
-.partner-main__inner .partner-body p.bold {
-  font-family: "LL Circular Pro Bold Web", sans-serif;
-  font-size: 21px;
-  line-height: 25px;
-  color: #04141c;
-}
-
-.partner-main__inner .partner-body p.sign {
-  color: #04141c;
-  margin-top: 25px;
+.partner-main__inner .partner-body .blue-line {
+  padding: 0.5rem 1rem 0.5rem 0;
+  color: #04141C;
 }
 
 .partner-icon {
@@ -6818,6 +6802,7 @@ ol.breadcrumb li a:hover {
       grid-template-columns: 1.2fr 2fr;
   -webkit-column-gap: 40px;
           column-gap: 40px;
+  width: 100%;
 }
 
 @media (max-width: 991px) {
