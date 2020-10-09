@@ -3256,7 +3256,7 @@ ol.breadcrumb li a:hover {
 .form-group-multi .time input {
   min-height: 50px;
   border: none;
-  border: 1px solid orange;
+  border: 1px solid #eaecee;
   border-radius: 5px;
   padding-left: 10px;
   padding-right: 10px;

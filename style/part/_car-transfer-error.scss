@@ -173,7 +173,8 @@
       input {
         min-height: 50px;
         border: none;
-        border: 1px solid orange;
+        border: 1px solid $color__light-grey;
+        // border: 1px solid orange; */ if error */
         border-radius: 5px;
         padding-left: 10px;
         padding-right: 10px;
