@@ -10,6 +10,7 @@
 }
 .transfer-main {
   margin-top: 65px;
+  margin-bottom: 65px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   @include respond-below(md) {
@@ -309,11 +310,139 @@
   }
 }
 
+// Live banner
+.electric_wrapper {
+  background: #EAECEE;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 5vh auto;
+  @include respond-below(md) {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  @include respond-below(sm) {
+    height: 100%;
+  }
+}
+.electric_inner {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  @include respond-below(sm) {
+    grid-template-columns: 1fr;
+  }
+}
+.electric_left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  @include respond-below(sm) {
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .miles_block,
+  .co2_block {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+
+  span {
+    color: #575A5C;
+    margin-left: 5px;
+    font-size: 0.8rem;
+  }
+  p {
+    font-size: 0.8rem;
+    color: #575A5C;
+  }
+  .miles_top {
+    display: flex;
+    align-items: flex-end;
+  }
+  .co2_top {
+    @extend.miles_top;
+  }
+  .electric_line {
+    height: 1px;
+    width: 60%;
+    background: black;
+    margin: 2rem 0;
+    @include respond-below(sm) {
+      width: 2px;
+      height: 50px;
+      margin: 0 2rem;
+    }
+  }
+}
+.electric_right {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1rem;
+  @include respond-below(sm) {
+    width: 100%;
+    h3 {
+      font-size: 1rem;
+      line-height: 1.2;
+    }
+  }
+  h3 {
+    color: #575A5C;
+    margin-bottom: 1rem;
+  }
+  .h3-black {
+    color: #000;
+  }
+}
+
+.live {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0.5rem 1rem;
+  p {
+    font-size: 12px;
+    margin-left: 4px;
+  }
+}
+.dot {
+  position: relative;
+  height: 10px;
+  width: 10px;
+  border: 1px solid #575A5C;
+  border-radius: 50%;
+
+}
+.dot:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  background: #575A5C;
+  animation: pulse 1s infinite;
+  transform-origin: center center;
+
+}
+
 // accrodion
+
 .more-info {
   margin-top: 60px;
   background-color: #fbfbfb;
   padding: 50px 0px;
+  width: 100%;
   .accordion-inner {
     > h3 {
       text-align: center;
@@ -325,212 +454,4 @@
   }
 }
 
-// Live banner
-.img-stats {
-  margin: 75px 0px;
-  p {
-    color: $color__bright;
-    @include respond-below(md) {
-      color: $color__text;
-    }
-  }
-  @include respond-below(sm) {
-    margin: 50px 0px;
-  }
-  &__background {
-    width: 80%;
-    min-height: 920px;
-    margin: auto;
-    background-image: url("./../images/banner.jpg");
-    background-size: cover;
-    position: relative;
-    padding: 0px 0px 30px;
-    @include respond-below(md) {
-      background-image: none;
-      min-height: auto;
-      padding: 0px 0px 0px;
-    }
-    &::after {
-      @include respond-below(md) {
-        display: none;
-      }
-      z-index: 0;
-      content: "";
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      background: transparent
-        linear-gradient(180deg, #04141c00 0%, #04141c 100%) 0% 0% no-repeat
-        padding-box;
-    }
-  }
-  .mobile-background {
-    @include respond-above(md) {
-      display: none;
-    }
-  }
-  &__header {
-    z-index: 2;
-    position: relative;
-    padding: 65px 100px;
-    @include respond-below(md) {
-      padding: 0px;
-    }
-    > p {
-      font-size: 75px;
-      line-height: 100px;
-      font-weight: bold;
-      @include respond-below(md) {
-        font-size: 32px;
-        line-height: 36px;
-        padding-bottom: 20px;
-      }
-    }
-  }
-  &__body {
-    z-index: 2;
-    position: relative;
-    @include respond-below(md) {
-      padding: 0px;
-    }
-    > p {
-      font-size: 27px;
-      line-height: 40px;
-      font-weight: bold;
-      @include respond-below(md) {
-        font-size: 21px;
-        line-height: 26px;
-        padding-top: 20px;
-      }
-    }
-  }
-  &__live {
-    margin-top: 190px;
-    @include respond-below(md) {
-      margin-top: 50px;
-    }
-    > p {
-      font-size: 21px;
-      font-weight: bold;
-      margin-bottom: 30px;
-    }
-  }
-  &__live-numbers {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
-    .green {
-      font-size: 50px;
-      font-weight: bold;
-      margin-right: 8px;
-      @include respond-below(md) {
-        font-size: 32px;
-      }
-    }
-    .miles,
-    .co2 {
-      p {
-        &:last-of-type {
-          @include respond-below(md) {
-            font-size: 12px;
-          }
-        }
-      }
-    }
-  }
-  &__bar {
-    width: 100%;
-    height: 8px;
-    border-radius: 30px;
-    background-color: $color__light-grey;
-    position: relative;
-    .bar-filler {
-      width: 40%;
-      background-color: #12da9f;
-      height: 8px;
-      position: absolute;
-      border-radius: 30px;
-      left: 0px;
-      &::after {
-        content: "";
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: 0px;
-        width: 16px;
-        height: 16px;
-        border-radius: 50%;
-        background-color: #12da9f;
-      }
-    }
-  }
-  &__target {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 27px;
-    .green {
-      color: #12da9f;
-    }
-    .target {
-      @include respond-below(md) {
-        font-size: 12px;
-      }
-    }
-    .live {
-      display: flex;
-      align-items: center;
-      p {
-        font-size: 12px;
-        margin-left: 4px;
-      }
-    }
-    .dot {
-      position: relative;
-      height: 10px;
-      width: 10px;
-      border: 1px solid $color__bright;
-      border-radius: 50%;
-      @include respond-below(md) {
-        border: 1px solid #12da9f;
-      }
-    }
-    .dot:after {
-      content: "";
-      position: absolute;
-      top: 2px;
-      left: 2px;
-      height: 4px;
-      width: 4px;
-      border-radius: 50%;
-      background: $color__bright;
-      animation: pulse 1s infinite;
-      transform-origin: center center;
-      @include respond-below(md) {
-        background: #12da9f;
-      }
-    }
-  }
-  .information {
-    width: 80%;
-    margin: auto;
-    margin-top: 75px;
-    .content-block__small {
-      @include respond-below(md) {
-        padding: 0px;
-      }
-    }
-    p {
-      color: $color__text;
-      @include respond-below(md) {
-        font-size: 23px;
-        line-height: 30px;
-      }
-      > span {
-        color: $color__grey;
-      }
-    }
-  }
-}
+

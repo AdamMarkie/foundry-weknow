@@ -171,8 +171,8 @@
       // ERROR ORANGE ******************************************
       input {
         min-height: 50px;
-        border: 1px solid #FFA272;
-        background: #FFF8F6;
+        border: none;
+        border: 1px solid $color__light-grey;
         border-radius: 5px;
         padding-left: 10px;
         padding-right: 10px;

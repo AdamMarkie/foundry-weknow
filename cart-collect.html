@@ -303,17 +303,25 @@
         </div>
         <div class="cart__summary">
           <h2>Summary</h2>
-          <p>
-            Your driver will meet you at the WeKnowLondon desk in the arrivals
-            hall.
-          </p>
-          <p>
-            Your order entitles you to 130 Heathrow Rewards points
-          </p>
-          <p>
-            By choosing an electric vehicle you have saved 12kg of CO2 on this
-            journey. Thank you!
-          </p>
+          <div class="cart-summary-text">
+            <p>Your order contains Click & Collect items. When and where would you like to collect your order?</p>
+          </div>
+          <div class="date-summary">
+            <label for="travelDate">Travel date</label>
+            <input type="date" id="travleDate" name="date" />
+          </div>
+          <div class="terminal-summary">
+            <label>Location</label>
+            <div class="terminal-container">
+              <select name="terminal" id="terminal-summary" class="terminal-summary">
+                <option value="Terminal-1">WeKnow, Heathrow Terminal 1 Arrivals</option>
+                <option value="Terminal-2">WeKnow, Heathrow Terminal 2 Arrivals</option>
+                <option value="Terminal-3">WeKnow, Heathrow Terminal 3 Arrivals</option>
+                <option value="Terminal-4">WeKnow, Heathrow Terminal 4 Arrivals</option>
+                <option value="Terminal-5">WeKnow, Heathrow Terminal 5 Arrivals</option>
+              </select>
+            </div>
+          </div>
           <div class="grey-line"></div>
           <div class="cart-total">
             <p>Total:</p>
