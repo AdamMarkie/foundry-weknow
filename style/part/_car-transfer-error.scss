@@ -163,6 +163,7 @@
     flex-direction: row;
     margin-top: 20px;
     margin-bottom: 20px;
+    align-items: baseline; /* align error message */
     .date,
     .time {
       display: flex;
@@ -172,7 +173,7 @@
       input {
         min-height: 50px;
         border: none;
-        border: 1px solid $color__light-grey;
+        border: 1px solid orange;
         border-radius: 5px;
         padding-left: 10px;
         padding-right: 10px;
