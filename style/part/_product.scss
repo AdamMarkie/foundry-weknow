@@ -407,3 +407,32 @@
     display: none;
   }
 }
+
+.highlight-blue {
+  border-left: 4px solid #00A6D3;
+  padding-left: 1rem;
+  margin: 2rem 0;
+  color: #04141c;
+  font-weight: normal;
+}
+
+.highlight-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  
+}
+.highlight-item {
+  display: flex;
+  height: 100%;
+  p {
+    color: #778591;
+    margin-left: 0.5rem;
+    font-size: 14px;
+    padding-right: 0 0.5rem;
+  }
+
+}
+
+.product-body .product-img img:first-of-typ {
+  margin: 0;
+}

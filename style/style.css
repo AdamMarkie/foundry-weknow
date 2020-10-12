@@ -4783,6 +4783,32 @@ ol.breadcrumb li a:hover {
   font-size: 14px;
 }
 
+.post-zip {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.post-zip label {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.post-zip input {
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: solid 1px #eaecee;
+  width: 100%;
+}
+
+.post-zip .town-form {
+  padding-right: 1rem;
+}
+
 .finalCheckout-main {
   margin-top: 30px;
   margin-bottom: 120px;
@@ -4925,6 +4951,21 @@ ol.breadcrumb li a:hover {
 .finalCheckout-main .customer-details .checkout-promotion-active .checkout-radio > p::after,
 .finalCheckout-main .customer-details .checkout-rewards-active .checkout-radio > p::after {
   background-color: #00a6d3;
+}
+
+.finalCheckout-main .customer-details .apply-btn {
+  color: #ffffff;
+  background-color: #00a6d3;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-top: 10px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.finalCheckout-main .customer-details .apply-btn:hover {
+  background: #008bb2;
 }
 
 .finalCheckout-main .customer-details .checkout-apple .checkout-radio > p img {
@@ -5355,6 +5396,48 @@ ol.breadcrumb li a:hover {
 
 .thankYou-info__inner .address p > span i {
   margin-right: 6px;
+}
+
+.message-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #EAECEE;
+  padding: 1rem;
+  color: #04141C;
+}
+
+.message-container .message-title {
+  margin-bottom: 20px;
+  font-weight: lighter;
+}
+
+.message-container .message-content {
+  margin-bottom: 20px;
+}
+
+.message-container .message-btn {
+  background: #00A6D3;
+  color: #fff;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 260px;
+  height: 54px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 17px;
+  margin-top: 20px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.message-container .message-btn:hover {
+  background: #008bb2;
 }
 
 .chooseVehicle-main {
@@ -6580,6 +6663,39 @@ ol.breadcrumb li a:hover {
   }
 }
 
+.highlight-blue {
+  border-left: 4px solid #00A6D3;
+  padding-left: 1rem;
+  margin: 2rem 0;
+  color: #04141c;
+  font-weight: normal;
+}
+
+.highlight-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.highlight-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.highlight-item p {
+  color: #778591;
+  margin-left: 0.5rem;
+  font-size: 14px;
+  padding-right: 0 0.5rem;
+}
+
+.product-body .product-img img:first-of-typ {
+  margin: 0;
+}
+
 .banner-contact {
   background-image: url("./../images/contact-banner.png");
   background-size: cover;
@@ -6722,6 +6838,8 @@ ol.breadcrumb li a:hover {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
   -webkit-column-gap: 30px;
           column-gap: 30px;
 }

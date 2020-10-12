@@ -98,3 +98,23 @@
     }
   }
 }
+
+// *********** Form change ****************
+.post-zip {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  label {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  input {
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: solid 1px $color__light-grey;
+    width: 100%;
+  }
+  .town-form {
+    padding-right: 1rem;
+  }
+}
